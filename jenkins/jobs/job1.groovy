@@ -5,7 +5,7 @@ pipelineJob('seed-job-demo/Pipelines/job1') {
             scm {
                 git {
                     remote {
-                        github('quamarar/seed-job')
+                        github('quamarar/seed-job-demo')
                     }
                 }
             }
