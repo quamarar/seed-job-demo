@@ -1,4 +1,3 @@
-pipelineJob('seed-job-demo/Pipelines/job1') {
 
 multibranchPipelineJob('seed-job-demo/Pipelines/job1') {
 
