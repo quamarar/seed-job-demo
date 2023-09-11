@@ -1,6 +1,13 @@
 
 multibranchPipelineJob('seed-job-demo/Pipelines/job1') {
 
+
+parameters {
+
+        choiceParam('ENVIRONMENT', ['dev', 'uat', 'prod'], 'select environment',)
+        chiceParam('action',['plan', 'apply', 'show', 'preview-destroy', 'destroy'], 'Terraform action to apply')
+    }
+
     branchSources {
         branchSource {
             source {
