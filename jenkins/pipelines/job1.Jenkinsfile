@@ -4,7 +4,7 @@ pipeline {
       stages {
         stage('job1') {
          when {
-           branch "production-*"
+           branch "production"
           }
             steps{
              echo " Hello, I am job1"
