@@ -12,9 +12,16 @@ multibranchPipelineJob('seed-job-demo/Pipelines/job1') {
                     
                     }
                 }
-        }
 
-}
+                     strategy {
+                            defaultBranchPropertyStrategy {
+                               props {
+                                noTriggerBranchProperty()
+                               }
+                            }
+                       }
+                  }
+               }
 configure {
     it / factory(class: 'org.jenkinsci.plugins.workflow.multibranch.WorkflowBranchProjectFactory') {
         owner(class: 'org.jenkinsci.plugins.workflow.multibranch.WorkflowMultiBranchProject', reference: '../..')
