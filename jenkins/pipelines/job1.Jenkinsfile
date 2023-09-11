@@ -15,7 +15,7 @@ pipeline {
       stages {
         stage('job1') {
             steps{
-             echo " Hello, I am job1"
+             echo " Hello, I am job1 from master branch"
              }
             }
           }
