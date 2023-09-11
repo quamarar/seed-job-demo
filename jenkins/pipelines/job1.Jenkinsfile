@@ -2,12 +2,10 @@ pipeline {
   agent any
 
       stages {
-        stage('job1') {
-         when {
-           branch "Production"
-          }
+        stage('productionjob1') {
+
             steps{
-             echo " Hello, I am job1"
+             echo " Hello, I am job1 from Production Branch"
              }
             }
           }
