@@ -1,1 +1,1 @@
-# seed-job-demo MASTER
+# seed-job-demo
